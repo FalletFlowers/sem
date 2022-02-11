@@ -1,2 +1,1 @@
-Fallet Flowers seMethods
-Initial test
+Fallet Flowers seMethods. Lab 2.
