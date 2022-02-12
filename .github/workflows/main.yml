@@ -26,3 +26,5 @@ jobs:
         run: docker run --network se-methods --name semcontainer se_methods
       - name: view logs
         run: docker logs semcontainer
+
+
