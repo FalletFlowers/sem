@@ -10,4 +10,13 @@ COPY db/test_db/*.sql /tmp/
 COPY db/test_db/*.dump /tmp/
 ENV MYSQL_ROOT_PASSWORD example
 
+COPY version: '3' services:/
+  # Application Dockerfile is in same folder which is .
+ENV  app: build: .
+
+  # db is is db folder
+COPY  db: COPY    build: db/
+ENV    command: --default-authentication-plugin=mysql_native_password
+ COPY  restart: always /
+
 
