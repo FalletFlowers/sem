@@ -1,6 +1,5 @@
 name: A workflow for my Hello World App
 on: push
-
 jobs:
   build:
     name: Hello world action
@@ -26,3 +25,4 @@ jobs:
         run: docker run --network se-methods --name semcontainer se_methods
       - name: view logs
         run: docker logs semcontainer
+
